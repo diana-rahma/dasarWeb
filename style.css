@@ -1,29 +1,37 @@
-h2 {
-    color: orange;
-    font-family: Trebuchet MS;
-    text-align: center;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-.kotak{
-    padding: 50px;
-    width: 100px;
-    color: #fff;
-    margin: 10px;
-    background: orange;
-}
-
-#kotak{
-    width: 400px;
-    color: #fff;
-    background: blue;
-    padding: 50px;
-}
-
-body{
-    background: url(./img/tree1.png), url(./img/field1.jpeg);
-    background-repeat: no-repeat, repeat;
-    color: white;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 100px;
 }
 
 
+/* tugas */
+.sidebar-satu{
+    background-color: lightcoral;
+    width: 900px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
+.sidebar-dua{
+    background-color: lightcoral;
+    width: 1000px;
+    padding-left: 10px;
+}
+
+/* latihan 1 */
+.container-satu {
+    background: url(./img/background.jpg);
+    width: 800px;
+    margin: 50px auto;
+    background-color: lightsalmon;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
