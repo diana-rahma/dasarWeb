@@ -41,6 +41,13 @@ echo "Hasil AND = $hasilAnd <br>";
 echo "Hasil OR = $hasilOr <br>";
 echo "Hasil NOT A = $hasilNotA <br>";
 echo "Hasil NOT B = $hasilNotB <br>";
+// var_dump($hasilNotA);
+
+$a += $b;
+$a -= $b;
+$a *= $b;
+$a /= $b;
+$a %= $b;
 
 
 echo "<br>";
@@ -56,5 +63,6 @@ $hasilTidakIdentik = $a !== $b;
 echo "<br>";
 echo "Hasil Identik = $hasilIdentik <br>";
 echo "Hasil Identik = $hasilTidakIdentik <br>";
+
 
 ?>
