@@ -58,6 +58,23 @@ foreach ($nilaiSiswa as $nilai) {
 
 echo "<br>";
 
-$nilaiSiswa
+
+$produk = 120000;
+echo "Harga awal = $produk <br>";
+if ($produk > 100000) {
+    echo "Selamat anda mendapatkan diskon sebesar 20% <br>";
+    $diskon = ($produk * 20) / 100;
+    $totalBayar = $produk - $diskon;
+    echo "Total bayar menjadi = $totalBayar";
+}
+echo "<br><br>";
+$poin = 504;
+echo "Total skor pemain adalah : $poin <br>";
+echo "Apakah pemain mendapatkan hadiah tambahan? (YA?TIDAK) :  ";
+$hadiah = ($poin > 500) ? "YA" : "TIDAK";
+if($poin > 500){
+    echo "$hadiah <br>";
+    echo "Selamat anda mendapatkan hadiah tambahan";
+}
 
 ?>

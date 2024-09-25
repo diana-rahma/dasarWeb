@@ -58,9 +58,30 @@ foreach ($daftarNilai[$mataKuliah] as $nilai) {
     echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
 }
 
+echo "<br><br>";
+$nilaiUjian = [
+    ['Alice', 85],
+    ['Bob', 92],
+    ['Charlie', 78],
+    ['David', 64],
+    ['Eva', 90],
+];
 
+$total_nilai = 0; 
+$jumlah_siswa = count($nilaiUjian); 
 
+foreach ($nilaiUjian as $siswa) {
+    $total_nilai += $siswa[1]; 
+}
 
+$rata_rata = $total_nilai / $jumlah_siswa;
+
+echo "Daftar nilai siswa yang mencapai nilai di atas rata-rata ($rata_rata):\n";
+foreach ($nilaiUjian as $siswa) {
+    if ($siswa[1] > $rata_rata) { 
+        echo "{$siswa[0]}: {$siswa[1]}\n"; 
+    }
+}
 
 
 

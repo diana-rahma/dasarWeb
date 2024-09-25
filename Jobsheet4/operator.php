@@ -64,5 +64,15 @@ echo "<br>";
 echo "Hasil Identik = $hasilIdentik <br>";
 echo "Hasil Identik = $hasilTidakIdentik <br>";
 
+$totalKursi = 45;
+$kursiTerisi = 28;
+$kursiKosong = $totalKursi - $kursiTerisi;
+$presentaseKursi = ($kursiKosong / $totalKursi) * 100;
+
+echo "<br>";
+echo "Jumlah seluruh kursi : $totalKursi <br>";
+echo "Jumlah kursi yang terisi : $kursiTerisi <br>";
+echo "Jumlah kursi kosong : $kursiKosong <br>";
+echo "Presentasi Kursi yang kosong yaitu $presentaseKursi %";
 
 ?>

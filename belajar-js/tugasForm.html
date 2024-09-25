@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir Contoh</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Sesuaikan tinggi sesuai kebutuhan */
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            width: 300px; /* Sesuaikan lebar formulir */
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" name="jenisKelamin" value="laki"> Laki-laki<br>
+        <input type="radio" name="jenisKelamin" value="perempuan"> Perempuan<br><br>
+
+        <label>Pekerjaan:</label><br>
+        <select id="pekerjaan" name="pekerjaan">
+            <option value="mahasiswa">Mahasiswa</option>
+            <option value="karyawan">Karyawan</option>
+            <option value="wirausaha">Wirausaha</option>
+        </select><br><br>
+
+        <label>Hobi:</label><br>
+        <input type="checkbox" name="hobi" value="membaca"> Membaca<br>
+        <input type="checkbox" name="hobi" value="menulis"> Menulis<br>
+        <input type="checkbox" name="hobi" value="bermainGame"> Bermain Game<br><br>
+
+        <input type="checkbox" id="syaratKetentuan" name="syaratKetentuan"> Saya setuju dengan syarat dan ketentuan<br><br>
+
+        <input type="submit" value="Kirim">
+    </form>
+
+    <script>
+        // Tambahkan script JavaScript di sini
+    </script>
+</body>
+</html>
