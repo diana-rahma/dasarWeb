@@ -67,6 +67,7 @@ if ($produk > 100000) {
     $totalBayar = $produk - $diskon;
     echo "Total bayar menjadi = $totalBayar";
 }
+
 echo "<br><br>";
 $poin = 504;
 echo "Total skor pemain adalah : $poin <br>";
