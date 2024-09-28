@@ -1,19 +1,28 @@
 <?php
 
-function perkenalan($nama, $salam){
-    echo $salam.",";
-    echo "Perkenalkan, nama saya ".$nama." <br>";
+
+function perkenalan(){
+    echo "Assalamualaikum, ";
+    echo "Perkenalkan, nama saya Diana <br>";
     echo "Senang berkenalan dengan anda<br>";
 }
 
-perkenalan("Diana", "Haloo");
+perkenalan();
 
-echo "<br>";
+// function perkenalan($nama, $salam){
+//     echo $salam.",";
+//     echo "Perkenalkan, nama saya ".$nama." <br>";
+//     echo "Senang berkenalan dengan anda<br>";
+// }
 
-$saya = "Diana";
-$ucapanSalam = "Selamat Pagi";
+// perkenalan("Diana", "Haloo");
 
-perkenalan($saya, $ucapanSalam);
+// echo "<br>";
+
+// $saya = "Diana";
+// $ucapanSalam = "Selamat Pagi";
+
+// perkenalan($saya, $ucapanSalam);
 
 
 ?>
