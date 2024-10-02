@@ -7,7 +7,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Sesuaikan tinggi sesuai kebutuhan */
+            height: 100vh; 
         }
 
         .container {
@@ -17,13 +17,56 @@
         }
 
         form {
-            width: 300px; /* Sesuaikan lebar formulir */
+            width: 300px; 
             margin-left: 20px;
         }
     </style>
+    <script>
+        function validateForm(event) {
+
+            var nama = document.getElementById("nama").value;
+            var alamat = document.getElementById("alamat").value;
+            var jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked');
+            var pekerjaan = document.getElementById("pekerjaan").value;
+            var hobi = document.querySelectorAll('input[name="hobi"]:checked');
+            var syaratKetentuan = document.getElementById("syaratKetentuan").checked;
+
+            if (nama === "") {
+                alert("Nama tidak boleh kosong!");
+                return;
+            }
+            
+            if (alamat === "") {
+                alert("Alamat tidak boleh kosong!");
+                return;
+            }
+
+            if (!jenisKelamin) {
+                alert("Pilih jenis kelamin!");
+                return;
+            }
+
+            if (pekerjaan === "") {
+                alert("Pilih pekerjaan!");
+                return;
+            }
+
+            if (hobi.length === 0) {
+                alert("Pilih minimal satu hobi!");
+                return;
+            }
+
+            if (!syaratKetentuan) {
+                alert("Anda harus menyetujui syarat dan ketentuan!");
+                return;
+            }
+
+            alert("Data berhasil disimpan!");
+        }
+    </script>
 </head>
 <body>
-    <form id="myForm">
+    <form id="form" method="post" onsubmit="validateForm(event)">
         <label for="nama">Nama:</label>
         <input type="text" id="nama" name="nama"><br><br>
 
@@ -48,11 +91,8 @@
 
         <input type="checkbox" id="syaratKetentuan" name="syaratKetentuan"> Saya setuju dengan syarat dan ketentuan<br><br>
 
-        <input type="submit" value="Kirim">
+        <button onclick="alert('Apakah anda ingin menyimpan data ini?')">Simpan</button>
     </form>
 
-    <script>
-        // Tambahkan script JavaScript di sini
-    </script>
 </body>
 </html>
