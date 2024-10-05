@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-    </style>
 </head>
 <body>
     <?php
@@ -16,11 +13,11 @@
             'jenis_kelamin' => 'Perempuan'
         ]; 
         ?>
-        <table border="1" height="100%" width="40%" >
+        <table border="1" height="100%" width="40%" style="background-color: lightblue;" >
             <tr>
-                <td><b>Nama</b></td>
-                <td><b>Domisili</b></td>
-                <td><b>Jenis Kelamin</b></td>
+                <th><b>Nama</b></th>
+                <th><b>Domisili</b></th>
+                <th><b>Jenis Kelamin</b></th>
             </tr>
             <tr>
                 <td><?php echo " {$Dosen ['nama']} <br>"; ?></td>
