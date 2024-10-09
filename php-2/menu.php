@@ -31,25 +31,25 @@ $menu = [
     ],
 ];
 
-// function tampilkanMenuBertingkat(array $menu){
-//     echo "<ul>";
-//     foreach ($menu as $key => $item) {
-//         echo "<li>{$item['nama']} </li>";
-//     }
-//     echo "</ul>";
-// }
-
 function tampilkanMenuBertingkat(array $menu){
     echo "<ul>";
-    foreach ($menu as $item) {
-        echo "<li>{$item['nama']}";
-        if (isset($item['subMenu'])) {
-            tampilkanMenuBertingkat($item['subMenu']);
-        }
-        echo "</li>";
+    foreach ($menu as $key => $item) {
+        echo "<li>{$item['nama']} </li>";
     }
     echo "</ul>";
 }
+
+// function tampilkanMenuBertingkat(array $menu){
+//     echo "<ul>";
+//     foreach ($menu as $item) {
+//         echo "<li>{$item['nama']}";
+//         if (isset($item['subMenu'])) {
+//             tampilkanMenuBertingkat($item['subMenu']);
+//         }
+//         echo "</li>";
+//     }
+//     echo "</ul>";
+// }
 
 tampilkanMenuBertingkat($menu);
 ?>
