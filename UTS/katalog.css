@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(216, 210, 194);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.katalog {
+    margin: 5px;
+    border: 1px solid rgb(74, 73, 71);
+    float: left;
+    width: 180px;
+  }
+  
+  div.katalog:hover {
+    border: 1px solid black;
+  }
+  
+  div.katalog img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
