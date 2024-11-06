@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <h3>Time</h3> -->
+    <h3>Time</h3>
     <?php
-        // date_default_timezone_set("asia/jakarta");
-        // echo date("h:i:sa");
-        echo json_encode($_SERVER);
+        date_default_timezone_set("asia/jakarta");
+        echo date("h:i:sa");
+        // echo json_encode($_SERVER);
     ?>
 </body>
 </html>
